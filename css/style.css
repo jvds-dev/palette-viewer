@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #003d66;
+    --tertiary-color: #a9ddff;
+    --text-color-p: #fff;
+    --text-color-s: #000;
+    --bg-color: #0c2a3f;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+}
+
+.text-container{
+    /* background: var(--primary-color); */
+    /* width: 200px; */
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.top, .bot{
+    display: flex;
+}
+.top{
+    color: var(--text-color-s);
+}
+.bot{
+    color: var(--text-color-p);
+}
+
+.primary{
+    background: var(--primary-color);
+}
+.secondary{
+    background: var(--secondary-color);
+}
+.tertiary{
+    background: var(--tertiary-color);
+}
+.font-square{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font-square p{
+    font-size: 72px;
+    /* color: var(--text-color); */
+}
+
+.lorem-container{
+    background: var(--primary-color);
+    width: 50%;
+    height: 404px;
+    padding: 22px;
+    font-size: 22px;
+}
+
+.colors{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+}
+.controls{
+    display: flex;
+}
+
+.colors button{
+    width: 24px;
+    height: 24px;
+}
+.colors #bgBtn{
+    width: 100%;
+    padding: 0px 8px;
+}
+.colors input{
+    width: 64px;
+    height: 24px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    /* display: flex; */
+}
+
+#page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
